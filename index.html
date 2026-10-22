@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Solstício de Verão · Confirme sua presença</title>
+  <title>Solstício de Verão 2026</title>
   <meta name="description" content="Quando o sol brilha e o dia é longo. Confirme sua presença no nosso solstício de verão, 19 de dezembro.">
   <meta name="theme-color" content="#FFFBF3">
 
@@ -42,7 +42,7 @@
         <g transform="translate(100 6) scale(1)"><use href="#star" class="s s7"/></g>
       </svg>
     </div>
-    <a class="hero__cue" href="#rsvp">confirme sua presença <span aria-hidden="true">↓</span></a>
+    <p class="hero__cue">confirme sua presença <span aria-hidden="true">↓</span></p>
   </header>
 
   <main>
@@ -58,19 +58,19 @@
     <!-- ============ DETALHES ============ -->
     <section class="details" aria-label="Detalhes do evento">
       <article class="detail">
-        <h2 class="detail__label">Quando</h2>
+        <h2 class="detail__label">quando</h2>
         <p class="detail__value">sábado, 19 de dezembro</p>
         <p class="detail__sub">a partir das 15h</p>
       </article>
 
       <article class="detail">
-        <h2 class="detail__label">Onde</h2>
+        <h2 class="detail__label">onde</h2>
         <p class="detail__value" id="event-address">Rua Pastor Tavares, 233</p>
         <p class="detail__sub"><a id="maps-link" href="https://maps.app.goo.gl/brFYHweSXuNozZY56"target="_blank" rel="noopener">abrir no mapa ↗</a></p>
       </article>
 
       <article class="detail">
-        <h2 class="detail__label">Traje</h2>
+        <h2 class="detail__label">traje</h2>
         <p class="detail__value">roupas leves e feéricas</p>
         <p class="detail__sub">tecidos fluidos, flores, brilhos, o que o sol pedir</p>
       </article>
@@ -85,35 +85,35 @@
     <!-- ============ RSVP ============ -->
     <section class="rsvp" id="rsvp">
       <div class="rsvp__card">
-        <h2 class="rsvp__title">Você vem?</h2>
-        <p class="rsvp__deadline">Confirme até <strong>30 de novembro</strong></p>
+        <h2 class="rsvp__title">você vem?</h2>
+        <p class="rsvp__deadline">confirme até <strong>30 de novembro</strong></p>
 
         <form id="rsvp-form" novalidate>
           <div class="field">
-            <label for="name">Seu nome</label>
+            <label for="name">seu nome</label>
             <input id="name" name="name" type="text" autocomplete="name" required
                    placeholder="Nome e sobrenome" maxlength="80">
-            <p class="field__error" id="name-error" hidden>Escreva seu nome, por favor.</p>
+            <p class="field__error" id="name-error" hidden>escreva seu nome, por favor.</p>
           </div>
 
           <fieldset class="field choice">
-            <legend>Sua resposta</legend>
+            <legend>sua resposta</legend>
             <div class="choice__options">
               <label class="choice__opt">
                 <input type="radio" name="attending" value="sim" required>
-                <span>✦ Eu vou</span>
+                <span>✦ eu vou</span>
               </label>
               <label class="choice__opt">
                 <input type="radio" name="attending" value="nao">
-                <span>Não vou poder</span>
+                <span>não vou poder</span>
               </label>
             </div>
-            <p class="field__error" id="attending-error" hidden>Escolha uma das opções.</p>
+            <p class="field__error" id="attending-error" hidden>escolha uma das opções.</p>
           </fieldset>
 
           <div class="companions" id="companions" hidden>
-            <p class="companions__label">Acompanhantes</p>
-            <p class="companions__hint">Vai levar alguém? Adicione o nome de cada pessoa.</p>
+            <p class="companions__label">acompanhantes</p>
+            <p class="companions__hint">vai levar alguém? adicione o nome de cada pessoa.</p>
             <ul class="companions__list" id="companions-list"></ul>
             <button type="button" class="btn-ghost" id="add-companion">+ adicionar acompanhante</button>
           </div>
@@ -121,7 +121,7 @@
           <!-- campo anti-robô: fica invisível para pessoas -->
           <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-          <button type="submit" class="btn" id="submit-btn">Enviar resposta</button>
+          <button type="submit" class="btn" id="submit-btn">enviar resposta</button>
           <p class="form__error" id="form-error" role="alert" hidden></p>
         </form>
 
