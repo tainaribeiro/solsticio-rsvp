@@ -48,8 +48,9 @@ a { color: var(--red); }
   align-items: center;
   justify-content: center;
   padding: 32px 16px 24px;
+  overflow-x: clip;
   background:
-    radial-gradient(ellipse 70% 50% at 42% 50%, #FFF6DE 0%, transparent 70%),
+    radial-gradient(ellipse 70% 50% at 50% 50%, #FFF6DE 0%, transparent 70%),
     var(--bg);
 }
 
@@ -57,6 +58,8 @@ a { color: var(--red); }
   position: relative;
   width: min(92vw, 110svh, 720px);
   aspect-ratio: 1504 / 1069;
+  /* centraliza o TEXTO do logo (não a imagem inteira): o texto vai de 30,8% a 98,3% da largura */
+  transform: translateX(-14.56%);
 }
 
 .hero__logo {
