@@ -185,6 +185,32 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px; }
   .detail { padding: 28px 20px; }
 }
 
+/* ---------- ATRAÇÕES ---------- */
+.extras { text-align: center; padding: 48px 0 0; }
+
+.extras__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+@media (min-width: 640px) {
+  .extras__grid { flex-direction: row; justify-content: center; gap: 40px; }
+  .extra { flex: 1; max-width: 260px; }
+}
+
+.extras__sep { color: var(--gold-deep); font-size: 1.1rem; }
+
+.extra__title {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--red);
+}
+.extra__sub { margin: 4px 0 0; font-style: italic; color: var(--ink-soft); font-size: 1.1rem; }
+
 /* ---------- RSVP ---------- */
 .rsvp { padding: 56px 0 24px; scroll-margin-top: 16px; }
 
