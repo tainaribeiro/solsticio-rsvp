@@ -49,14 +49,14 @@ a { color: var(--red); }
   justify-content: center;
   padding: 32px 16px 24px;
   background:
-    radial-gradient(ellipse 70% 50% at 50% 35%, #FFF6DE 0%, transparent 70%),
+    radial-gradient(ellipse 70% 50% at 42% 50%, #FFF6DE 0%, transparent 70%),
     var(--bg);
 }
 
 .hero__art {
   position: relative;
-  width: min(78vw, 46svh, 440px);
-  aspect-ratio: 1069 / 1504;
+  width: min(92vw, 110svh, 720px);
+  aspect-ratio: 1504 / 1069;
 }
 
 .hero__logo {
@@ -71,9 +71,9 @@ a { color: var(--red); }
 /* brilho que pulsa atrás do sol do logo */
 .hero__glow {
   position: absolute;
-  left: 48.8%;
-  top: 37.5%;
-  width: 70%;
+  left: 37.5%;
+  top: 51.2%;
+  width: 48%;
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
   border-radius: 50%;
